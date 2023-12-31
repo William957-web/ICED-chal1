@@ -1,5 +1,5 @@
 <?php 
-if(isset($_POST['username'])||isset($_POST['password'])){
+if(isset($_POST['username'])&&isset($_POST['password'])){
     if($_POST['username']!=''&&$_POST['password']!=''){
         if($_POST['username']!='Whale'&&$_POST['password']!='R4hl1nIsTheCutiest'){
             echo('<h1>Login Failed</h1>');
@@ -21,7 +21,7 @@ if(isset($_POST['username'])||isset($_POST['password'])){
 </head>
 <body>
 <!---
-if(isset($_POST['username'])||isset($_POST['password'])){
+if(isset($_POST['username'])&&isset($_POST['password'])){
     if($_POST['username']!=''&&$_POST['password']!=''){
         if($_POST['username']!='HIDDEN'&&$_POST['password']!='HIDDEN'){
             echo('<h1>Login Failed</h1>');
