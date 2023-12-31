@@ -47,7 +47,6 @@ if(isset($_POST['username'])&&isset($_POST['password'])){
 <h3><sapn id="Outcome"></sapn></h3>
 </div>
 <div class="action">
-<button>Register</button>
 <button id="Button"  type="submit">Sign in</button>
 </div>
 </form>
