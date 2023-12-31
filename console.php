@@ -41,7 +41,7 @@ if($_COOKIE['cookie']!="HEYCUPERSECRETCOOKIE"){
     <h1>Curl🌊</h1>
     <form method="POST">
         <div>
-            <input type="text" name="name" placeholder="example.com" id="hostname" value="<?= $_POST['name'] ?? '' ?>">
+            <input type="text" name="name" placeholder="example.com" id="hostname" value="<?php echo($_POST['name'])?>">
         </div>
         <button class="btn">
             curl!
@@ -51,7 +51,7 @@ if($_COOKIE['cookie']!="HEYCUPERSECRETCOOKIE"){
     <?php if (isset($_POST['name'])) : ?>
         <p>
             <p>dig result:</p>
-            <pre><?= system("curl '" . $_POST['name'] . "';") ?></pre>
+            <pre><?php system("curl '" . $_POST['name'] . "';") ?></pre>
     </p>
     <?php endif; ?>
     <hr>
