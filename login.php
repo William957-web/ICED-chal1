@@ -39,7 +39,7 @@ if(isset($_POST['username'])&&isset($_POST['password'])){
 <h1>Login</h1>
 <div class="content">
 <div class="input-field">
-<input style="text" name="username" id="username" placeholder="Email" autocomplete="nope">
+<input style="text" name="username" id="username" placeholder="username" autocomplete="nope">
 </div>
 <div class="input-field">
 <input type="text" name="password" id="password" placeholder="Password">
